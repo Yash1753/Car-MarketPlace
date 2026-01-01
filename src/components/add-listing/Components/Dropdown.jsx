@@ -6,16 +6,16 @@ import {
   SelectValue,
 } from "@/components/ui/select"
 
-function Dropdown({item}) {
+function Dropdown({item, handleInputChange}) {
   return (
     <div>
-    <Select>
+    <Select onValueChange={(value) => handleInputChange(item.name,value)}  required = {item.required} >
         <SelectTrigger className="w-full">
             <SelectValue placeholder={item?.label} />
          </SelectTrigger>
     <SelectContent>
         {item?.options?.map((option,index)=>(
-             <SelectItem key = {index}value={option} className= "overflow-auto overflow-y-scroll]">{option}</SelectItem>
+             <SelectItem key = {index}value={option} className= "">{option}</SelectItem>
         ))}
        
        
