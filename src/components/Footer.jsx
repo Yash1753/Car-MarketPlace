@@ -143,7 +143,7 @@ function Footer() {
         </ul>
 
         <p className="mt-8 text-xs text-gray-500 sm:mt-0">
-          © 2025. CarEZBUYS. All rights reserved.
+          © 2025. AutoHub. All rights reserved.
         </p>
       </div>
     </div>

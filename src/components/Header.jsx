@@ -5,9 +5,9 @@ import { Link } from "react-router-dom"
 function Header() {
     const {user, isSignedIn} = useUser
   return (
-    <div className="flex justify-between items-center shadow-sm p-5">
+    <div className="flex justify-between items-center shadow-sm p-3">
       <Link to="/">
-        <img src="/logo.svg" alt="logo" width={150} height={150} />
+        <img src="/logo.png" alt="logo" width={120} height={120} />
       </Link>
         <ul className="hidden md:flex gap-16">
             <li className="font-medium cursor-pointer hover:scale-105 transition-all hover:text-primary" >Home</li>
